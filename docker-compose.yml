@@ -1,0 +1,7 @@
+version: '3.1'
+
+services:
+  springboot:
+    image: 790120743628.dkr.ecr.eu-north-1.amazonaws.com/ecr-subash:TAGREPLACE
+    ports:
+      - 8081:8080
