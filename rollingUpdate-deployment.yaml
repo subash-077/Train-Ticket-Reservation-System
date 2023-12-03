@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -10,8 +11,8 @@ spec:
       app: my-pod
   strategy:
     type: RollingUpdate
-	maxSurge: 50%
-	maxUnavailable: 50%
+    maxSurge: 50%
+    maxUnavailable: 50%
   minReadySeconds: 50
   template:
     metadata:
@@ -36,4 +37,4 @@ spec:
     app: my-pod
   ports:
     - port: 80
-      targetPort: 8080
+      targetPort: 8080
