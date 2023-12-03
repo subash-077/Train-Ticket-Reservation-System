@@ -10,7 +10,7 @@ spec:
       app: my-pod
   strategy:
     type: RollingUpdate
-	rollingUpdate:
+    rollingUpdate:
      maxSurge: 50%
      maxUnavailable: 50%
   minReadySeconds: 50
